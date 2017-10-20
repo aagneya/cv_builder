@@ -1,0 +1,88 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CRAWLING </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href={% static "vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href={% static "css/business-casual.css" %} rel="stylesheet">
+
+    <!-- Upload css -->
+
+    <link href={% static "css/upload/upload.css"  rel="stylesheet">
+
+<!-- gallery css -->
+
+    <link rel="stylesheet" href="{% static 'css/blueimp-gallery.css' %}">
+    <link rel="stylesheet" href= "{% static 'css/blueimp-gallery-indicator.css' %}">
+
+    <link rel="stylesheet" href= "{% static 'css/style.css' %}">
+
+
+
+  </head>
+
+  <body>
+     <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">WEB CRAWLING</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+
+    
+
+  
+
+    
+
+    {% block jumbotron %}
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+   
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src={% static "vendor/jquery/jquery.min.js" %}></script>
+    <script src={% static "vendor/popper/popper.min.js" %}></script>
+    <script src={% static "vendor/bootstrap/js/bootstrap.min.js" %}></script>
+
+    <!-- upload -->
+    <script src={% static "js/upload.js" %}></script>
+
+<!-- gallery -->
+
+    <script src={% static "js/blueimp-helper.js" %}></script>
+<script src={% static "js/blueimp-gallery.js" %}></script>
+<script src={% static "js/blueimp-gallery-fullscreen.js" %}></script>
+<script src={% static "js/blueimp-gallery-indicator.js" %}></script>
+<script src={% static "js/blueimp-gallery-video.js" %}></script>
+<script src={% static "js/blueimp-gallery-vimeo.js" %}></script>
+<script src={% static "js/blueimp-gallery-youtube.js" %}></script>
+<script src={% static "js/vendor/jquery.js" %}></script>
+<script src={% static "js/jquery.blueimp-gallery.js" %}></script>
+<script src={% static "js/demo/demo.js" %}></script>
+  </body>
+
+</html>

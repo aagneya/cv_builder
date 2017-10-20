@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 60px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddc232;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #d83c;
+    color: white;
+}
+
+
+p  {
+    color: white;
+    font-family: courier;
+    font-size: 160%;
+    padding-left:16px;
+
+
+
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="/about/">ABOUT</a>
+  <a href="/">WELCOME</a>
+  <a href="/post_new/">Create New Resume</a>
+  <a href="/resume/">RESUME</a>
+  <form action="/search/" method = POST>
+{% csrf_token %}
+
+    
+</form>
+
+    {% if request.user.is_authenticated %}
+         <a class="active" href="{% url 'auth_logout' %}">LOGOUT</a>
+         <p> Hiii {{ user }}</p>
+    {% else %}
+         <a class="topnav" href="{% url 'auth_login' %}">LOGIN</a>
+         <a class="active" href="{% url 'registration_register' %}">REGISTRATION</a>
+    {% endif %}
+
+</div>
+
+
+
+</body>
+</html>

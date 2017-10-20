@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% load staticfiles %} <!-- New line -->
+
+
+     
+
+{% block jumbotron %}
+
+
+   {% include 'navbar.html' %}
+
+
+<div class="image123">
+    <div class="imgContainer">
+        <a href="/post_ONE/"><img src="{% static '/static/img/form1.png/' %}" height="400" width="300"/></a>
+        <p>This is image 1</p>
+    </div>
+    <div class="imgContainer">
+        <a href="/post_TWO/"><img src="{% static '/static/img/form2.jpg/' %}" height="400" width="300"/></a>
+        <p>This is image 2</p>
+    </div>
+    <div class="imgContainer">
+         <a href="/post_THREE/"><img src="{% static '/static/img/form3.png/' %}" height="400" width="300"/></a>
+        <p>This is image 3</p>
+    </div>
+</div>
+
+
+      
+{% endblock %}
+
+
+
+
+
+

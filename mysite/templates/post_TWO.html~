@@ -1,0 +1,112 @@
+
+
+
+{% load staticfiles %} <!-- New line -->
+
+{% block 'jumbotron' %}
+
+<style>
+body {
+    margin:0;
+    background: blue; 
+}
+</style>
+
+
+{% include 'navbar.html' %}
+
+<h1 style="color:black;">Please Enter The Details</h1>
+
+
+  <form  method="POST" action="" enctype='multipart/form-data'>{% csrf_token %}
+  <table style="width:100%">
+
+    <tr>
+
+    <td><h1 style="color:white;">Name</h1> {{ form.name }} </td>
+
+  </tr>
+
+
+    <tr>
+
+    <td><h1 style="color:white;">OBJECTIVE</h1> {{ form.obj }} </td>
+
+  </tr>
+
+  <tr>
+    <td><h1 style="color:white;">ADDRESS 1</h1>{{ form.address1 }} </td>
+  </tr>
+
+  
+  </tr>
+
+  <tr>
+    <td><h1 style="color:white;">ADDRESS 2</h1>{{ form.address2 }} </td>
+  </tr>
+
+  
+  <tr>
+    <td><h1 style="color:white;">TELE</h1>{{ form.cell }} </td>
+  </tr>
+
+  <tr>
+    <td><h1 style="color:white;">SCHOOL</h1>{{ form.school }} </td>
+  </tr>
+
+
+   <tr>
+    <td><h1 style="color:white;">EMAIL</h1>{{ form.email }} </td>
+  </tr>
+
+<tr>
+    <td><h1 style="color:white;">Undergraduation</h1>{{ form.UG }} </td>
+  </tr>
+
+
+<tr>
+    <td><h1 style="color:white;">POSTGRADUATION</h1>{{ form.PG }} </td>
+  </tr>
+
+<tr>
+  <td><h1 style="color:white;">Skills</h1>{{ form.skills }}</td>
+</tr>
+
+ <tr>
+    <td><h1 style="color:white;">Experiance</h1> {{ form.expone }}  </td>
+ </tr>
+
+
+ <tr>
+    <td><h1 style="color:white;">Experiance</h1> {{ form.expfrom }}  </td>
+ </tr>
+
+<tr>
+    <td><h1 style="color:white;">Experiance</h1> {{ form.expto }}  </td>
+ </tr>
+
+ <tr>
+    <td><h1 style="color:white;">Experiance</h1> {{ form.exptwo }}  </td>
+ </tr>
+
+ <tr>
+    <td><h1 style="color:white;">Image</h1> {{ form.image }}  </td>
+ </tr>
+
+ <tr>
+    <td><h1 style="color:white;">Hobbies</h1> {{ form.created_date }}  </td>
+ </tr>
+
+
+ </table>
+
+  <input type="submit" value="SAVE" />
+</form>
+
+
+
+{% endblock %}
+
+
+
+

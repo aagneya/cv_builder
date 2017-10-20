@@ -1,0 +1,49 @@
+
+
+
+{% load staticfiles %} <!-- New line -->
+
+
+
+
+
+{% block jumbotron %}
+
+
+
+
+
+
+
+
+
+<div class="post">
+
+    <div>
+        <p class = "test">NAME: {{ post.name}}</p>
+        <p>GENDER: {{ post.gender }}</p>
+        <p>ADDRESS 1: {{ post.address1 }}</p>
+        <p>ADDRESS 2: {{ post.address1 }}</p>
+
+        <p>QUALIFICATION : {{  post.qualification }} </p>
+
+        <p>SKILLS : {{ post.skills }} </p>
+        <p>HOBBIES : {{ post.hobbies }} </p>
+    </div>
+
+   <button id="printb" onclick="myFunction()">PRINT/DOWNLOAD</button>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+            <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+            <li><a class="btn btn-lg btn-primary" href="/" role="button">HOME</a></li>
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+
+
+
+
+{% endblock %}
